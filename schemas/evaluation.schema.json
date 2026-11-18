@@ -1,0 +1,175 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/executive-reflexes/evaluation.schema.json",
+  "title": "Executive Reflexes Evaluation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "rubricVersion",
+    "turnId",
+    "scores",
+    "strengths",
+    "risks",
+    "missedAssumptions",
+    "evidenceQuotes",
+    "reframe",
+    "recommendedAction",
+    "confidence",
+    "insufficientContext"
+  ],
+  "properties": {
+    "rubricVersion": {
+      "type": "string"
+    },
+    "turnId": {
+      "type": "string"
+    },
+    "scores": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "assumption_detection": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 4
+        },
+        "strategic_breadth": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 4
+        },
+        "executive_questioning": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 4
+        },
+        "assertiveness": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 4
+        },
+        "diplomacy": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 4
+        },
+        "decision_orientation": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 4
+        },
+        "political_judgment": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 4
+        },
+        "conciseness": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 4
+        },
+        "business_framing": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 4
+        },
+        "evidence_accountability": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 4
+        }
+      }
+    },
+    "strengths": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "risks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "missedAssumptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidenceQuotes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "reframe": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "needed",
+        "suggestion",
+        "rationale"
+      ],
+      "properties": {
+        "needed": {
+          "type": "boolean"
+        },
+        "suggestion": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "rationale": {
+          "type": "string"
+        }
+      }
+    },
+    "recommendedAction": {
+      "type": "string"
+    },
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ]
+    },
+    "insufficientContext": {
+      "type": "boolean"
+    }
+  }
+}

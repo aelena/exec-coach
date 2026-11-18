@@ -1,0 +1,58 @@
+[
+  {
+    "id": "erp-accusatory-question",
+    "scenarioId": "erp-friday-release",
+    "note": "Substantively right, phrased as an exam of the team. Diplomacy should be low; a reframe is needed.",
+    "userTurns": ["How many tests have you actually written? This is going to blow up on Friday."],
+    "expect": { "scores": { "diplomacy": { "max": 1 }, "evidence_accountability": { "max": 2 } }, "reframeNeeded": true }
+  },
+  {
+    "id": "erp-shared-decision",
+    "scenarioId": "erp-friday-release",
+    "note": "The model intervention from the original kata. No reframe should be manufactured.",
+    "userTurns": ["I understand why Friday matters. To commit at a reasonable risk we need to confirm failure handling, retries and reconciliation. What evidence do we have today, and what scope could we release safely?"],
+    "expect": { "scores": { "diplomacy": { "min": 3 }, "evidence_accountability": { "min": 3 }, "executive_questioning": { "min": 3 } }, "reframeNeeded": false }
+  },
+  {
+    "id": "erp-polite-evasion",
+    "scenarioId": "erp-friday-release",
+    "note": "Empty politeness must not be rewarded: pleasant, commits to nothing, surfaces nothing.",
+    "userTurns": ["Absolutely, Friday sounds great. The team has worked really hard and I am sure it will all be fine. We will do our best."],
+    "expect": { "scores": { "assertiveness": { "max": 1 }, "evidence_accountability": { "max": 1 } } }
+  },
+  {
+    "id": "ai-categorical-forecast",
+    "scenarioId": "ai-six-week-launch",
+    "note": "Categorical prediction and an attack on Sales. True concern, unprovable wording.",
+    "userTurns": ["That is impossible. Sales has sold smoke, and if we try to do everything in six weeks we will fail."],
+    "expect": { "scores": { "diplomacy": { "max": 1 }, "assertiveness": { "min": 2 } }, "reframeNeeded": true }
+  },
+  {
+    "id": "ai-clear-no-with-offer",
+    "scenarioId": "ai-six-week-launch",
+    "note": "A justified refusal with a verifiable alternative, respecting the contract. A clear no can be the best answer.",
+    "userTurns": ["I cannot guarantee the complete assistant in six weeks: we have no evaluation set and no agreed acceptance criteria. What I can commit to is a verifiable scope on the validated documents, with measurable criteria. What does the signed contract say about acceptance, and who can open a change request with the customer?"],
+    "expect": { "scores": { "assertiveness": { "min": 3 }, "decision_orientation": { "min": 3 }, "evidence_accountability": { "min": 3 } }, "reframeNeeded": false }
+  },
+  {
+    "id": "automation-technology-only",
+    "scenarioId": "automation-40-percent",
+    "note": "Answers the platform question and misses every business premise.",
+    "userTurns": ["I would go with a retrieval-based platform on your existing cloud, with an orchestration layer and connectors to the ERP. We can have a proof of concept in eight weeks."],
+    "expect": { "scores": { "assumption_detection": { "max": 1 }, "business_framing": { "max": 1 } } }
+  },
+  {
+    "id": "automation-capacity-vs-cash",
+    "scenarioId": "automation-40-percent",
+    "note": "Surfaces the economic mechanism without accusing leadership of having no strategy.",
+    "userTurns": ["Before choosing a platform I would like to understand the benefit we are designing for. Is the 40% a cost reduction, or capacity you plan to redeploy? The answer changes what we should automate first."],
+    "expect": { "scores": { "assumption_detection": { "min": 3 }, "business_framing": { "min": 3 }, "political_judgment": { "min": 2 } }, "reframeNeeded": false }
+  },
+  {
+    "id": "automation-public-accusation",
+    "scenarioId": "automation-40-percent",
+    "note": "Right about the gap, wrong forum and beyond the advisory mandate.",
+    "userTurns": ["With respect, this is not a strategy. That consultancy figure makes no sense, and you are not going to save anything if you do not lay anyone off."],
+    "expect": { "scores": { "political_judgment": { "max": 1 }, "diplomacy": { "max": 1 } }, "reframeNeeded": true }
+  }
+]

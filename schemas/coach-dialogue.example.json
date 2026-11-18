@@ -1,0 +1,24 @@
+{
+  "id": "dialogue-001",
+  "schemaVersion": 1,
+  "relatedSessionIds": [
+    "session-014"
+  ],
+  "createdAt": "2026-11-18T14:05:00Z",
+  "messages": [
+    {
+      "role": "user",
+      "text": "Why was the CIO defensive?",
+      "timestamp": "2026-11-18T14:05:10Z"
+    },
+    {
+      "role": "coach",
+      "text": "The scenario states the CIO sponsored the vendor; your wording may have made this a reputational challenge.",
+      "timestamp": "2026-11-18T14:05:14Z",
+      "causalEventRefs": [
+        "causal-001"
+      ],
+      "epistemicStatus": "model_interpretation"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "version": "0.5",
+  "locales": [
+    "es-ES",
+    "en"
+  ],
+  "pairs": {
+    "voices": [
+      "board-sponsor.md",
+      "ceo-impatient.md",
+      "cfo-skeptical.md",
+      "cio-territorial.md",
+      "sales-director.md"
+    ],
+    "scenarios": [
+      "ai-six-week-launch.md",
+      "automation-40-percent.md",
+      "erp-friday-release.md"
+    ],
+    "coaches": [
+      "executive-coach.md"
+    ],
+    "profiles": [
+      "personal-cto-profile.md"
+    ],
+    "templates": [
+      "actor.template.md",
+      "coach.template.md",
+      "profile.template.md",
+      "scenario.template.md"
+    ]
+  },
+  "canonicalActorHeadings": [
+    "# Identity",
+    "## Objectives",
+    "## Communication Style",
+    "## Behavior and Pressure Tactics",
+    "## Adaptation to Trainee",
+    "## Knowledge Boundaries",
+    "## Interaction Rules",
+    "## Scenario Hooks"
+  ],
+  "scenarioRequiredSections": [
+    "Setting",
+    "User mandate",
+    "Opening",
+    "Learning objectives",
+    "Public Context",
+    "Hidden World State",
+    "Revelation Rules",
+    "Causal Debrief Notes"
+  ],
+  "scenarioOptionalSections": [
+    "Escalation",
+    "Important nuance",
+    "Reframing Seeds"
+  ]
+}

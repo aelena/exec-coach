@@ -1,0 +1,23 @@
+node_modules/
+dist/
+dev-dist/
+coverage/
+test-results/
+playwright-report/
+*.local
+
+# BYOK keys for local development only; never commit them
+.env
+.env.*
+!.env.example
+
+# Working specification stays local and untracked
+SPECS.md
+SPECS.en.md
+docs/en/SPECS.md
+docs/es/SPECS.md
+
+# Local tooling state
+.claude/settings.local.json
+graft/
+_memoria.md

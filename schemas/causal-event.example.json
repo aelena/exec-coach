@@ -1,0 +1,20 @@
+{
+  "id": "causal-001",
+  "schemaVersion": 1,
+  "sessionId": "session-014",
+  "turnId": "turn-008",
+  "eventType": "actor_objection",
+  "scenarioFactRefs": [
+    "cio-sponsored-vendor"
+  ],
+  "triggerRefs": [
+    "trainee-challenges-vendor"
+  ],
+  "observedActorResponse": "We have already made this decision.",
+  "explanationFactors": [
+    "reputational_exposure",
+    "sunk_cost_concern"
+  ],
+  "epistemicStatus": "scenario_fact",
+  "createdAt": "2026-11-18T14:00:00Z"
+}

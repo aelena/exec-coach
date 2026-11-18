@@ -1,0 +1,10 @@
+{
+  "schemaVersion": "1.0",
+  "id": "learning-example-1",
+  "concept": "Bandura self-efficacy",
+  "reason": "Practice distinguishing capability beliefs from outcome expectations",
+  "evidenceRefs": [],
+  "action": "save_for_next_session",
+  "status": "pending",
+  "locale": "es-ES"
+}

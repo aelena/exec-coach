@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "1.0",
+  "id": "swot-example-1",
+  "quadrant": "weakness",
+  "claim": "Uses categorical predictions when discussing technical risks",
+  "behavioralEvidence": [
+    {
+      "sessionId": "example-session",
+      "turnId": "example-turn"
+    }
+  ],
+  "confidence": "low",
+  "firstSeen": "2026-11-18T00:00:00Z",
+  "lastSeen": "2026-11-18T00:00:00Z",
+  "trend": "unknown",
+  "status": "candidate",
+  "userNotes": ""
+}
